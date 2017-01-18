@@ -10,6 +10,7 @@ use Path::Class();
 use ES::Repo();
 use File::Copy::Recursive qw(fcopy rcopy);
 use ES::Toc();
+use utf8;
 
 our %Page_Header = (
     en => {
