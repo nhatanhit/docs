@@ -72,13 +72,13 @@
 	   
 
     <!-- css -->
-    <link href="https://static-www.elastic.co/static/css/main.css?q=700" rel="stylesheet">
+    <link href="https://stag-static-www.elastic.co/static/css/main.css?q=650" rel="stylesheet">
     
     
 
-    <script src="https://static-www.elastic.co/static/js/jquery.min.js?q=700"></script>
-    <script src="https://static-www.elastic.co/static/js/bootstrap.min.js?q=700"></script>
-    <script src="https://static-www.elastic.co/static/js/jquery.cookie.js?q=700"></script>
+    <script src="https://stag-static-www.elastic.co/static/js/jquery.min.js?q=650"></script>
+    <script src="https://stag-static-www.elastic.co/static/js/bootstrap.min.js?q=650"></script>
+    <script src="https://stag-static-www.elastic.co/static/js/jquery.cookie.js?q=650"></script>
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -122,7 +122,7 @@
 
 
 	
-	<link type="text/css" rel="stylesheet" href="https://static-www.elastic.co/static/css/guide.css?q=700" />
+	<link type="text/css" rel="stylesheet" href="https://stag-static-www.elastic.co/static/css/guide.css?q=650" />
 
 
   
@@ -200,7 +200,7 @@
           <div class="navbar-brand" id="elastic">
             <h1>
               <a class="logo-m hidden-sm hidden-md hidden-lg" href="/">
-                <img src="https://static-www.elastic.co/assets/bltd5ac38b4549d53de/elastic-logo-mobile (1).svg?q=700" alt="elastic-logo-mobile">
+                <img src="https://stag-static-www.elastic.co/assets/bltd5ac38b4549d53de/elastic-logo-mobile (1).svg?q=650" alt="elastic-logo-mobile">
               </a>
             </h1>
           </div>
@@ -249,7 +249,7 @@
       <div class="navbar-brand hidden-xs" id="elastic">
         <h1>
           <a class="hidden-xs" id="elastic-logo" href="/">
-            <img src="https://static-www.elastic.co/assets/blt6050efb80ceabd47/elastic-logo (2).svg?q=700" alt="elastic-logo">
+            <img src="https://stag-static-www.elastic.co/assets/blt6050efb80ceabd47/elastic-logo (2).svg?q=650" alt="elastic-logo">
           </a>
         </h1>
       </div>
@@ -382,24 +382,24 @@
   </div>
 </div>
 </header>
-<link rel="stylesheet" type="text/css" href="https://static-www.elastic.co/static/css/horizon-swiper.min.css?q=700">
+<link rel="stylesheet" type="text/css" href="https://stag-static-www.elastic.co/static/css/horizon-swiper.min.css?q=650">
 <style> 
     
       .m-shortcuts li a.m-search {
-        background: url("https://static-www.elastic.co/assets/blt7b9c4fe6528dc4ef/m-search-icon.png?q=700") no-repeat scroll center center rgba(0, 0, 0, 0);
+        background: url("https://stag-static-www.elastic.co/assets/blt7b9c4fe6528dc4ef/m-search-icon.png?q=650") no-repeat scroll center center rgba(0, 0, 0, 0);
         background-size: contain;}
     
       .m-shortcuts li a.m-docs {
-        background: url("https://static-www.elastic.co/assets/blt44d8b7530a76d01c/m-guide-icon.png?q=700") no-repeat scroll center center rgba(0, 0, 0, 0);
+        background: url("https://stag-static-www.elastic.co/assets/blt44d8b7530a76d01c/m-guide-icon.png?q=650") no-repeat scroll center center rgba(0, 0, 0, 0);
         background-size: contain;}
     
       .m-shortcuts li a.m-contact {
-        background: url("https://static-www.elastic.co/assets/blt878040795c9d083b/m-contact-icon.png?q=700") no-repeat scroll center center rgba(0, 0, 0, 0);
+        background: url("https://stag-static-www.elastic.co/assets/blt878040795c9d083b/m-contact-icon.png?q=650") no-repeat scroll center center rgba(0, 0, 0, 0);
         background-size: contain;}
     
     
 </style>
-<script type="text/javascript" src="https://static-www.elastic.co/static/js/horizon-swiper.min.js?q=700"></script>
+<script type="text/javascript" src="https://stag-static-www.elastic.co/static/js/horizon-swiper.min.js?q=650"></script>
 <script type="text/javascript">
   $(document).ready( function(){
     // if($('#scrollable-pane li').length > 3){
@@ -547,7 +547,7 @@
           
 
           
-	<section id="guide">
+	<section id="guide" lang="en">
 		<div class="container">
 			<div class="row">
 			  <!-- start body -->
@@ -567,36 +567,51 @@ Not what you want? See the
            
           <a href="search-aggregations-bucket-histogram-aggregation.html">Histogram Aggregation
                »
-            </a></span></div><div class="section"><div class="titlepage"><div><div><h2 class="title"><a id="search-aggregations-bucket-global-aggregation"></a>Global Aggregation<a href="https://github.com/elastic/elasticsearch/edit/master/docs/reference/aggregations/bucket/global-aggregation.asciidoc" class="edit_me" title="Edit this page on GitHub" rel="nofollow">edit</a></h2></div></div></div><p>Defines a single bucket of all the documents within the search execution context. This context is defined by the indices and the document types you’re searching on, but is <span class="strong"><strong>not</strong></span> influenced by the search query itself.</p><div class="note admon"><div class="icon"><img alt="Note" src="images/icons/note.png" /></div><div class="admon_content"><p>Global aggregators can only be placed as top level aggregators (it makes no sense to embed a global aggregator
-        within another bucket aggregator)</p></div></div><p>Example:</p><div class="pre_wrapper"><pre class="programlisting prettyprint lang-js">{
+            </a></span></div><div class="section"><div class="titlepage"><div><div><h2 class="title"><a id="search-aggregations-bucket-global-aggregation"></a>Global Aggregation<a href="https://github.com/elastic/elasticsearch/edit/master/docs/reference/aggregations/bucket/global-aggregation.asciidoc" class="edit_me" title="Edit this page on GitHub" rel="nofollow">edit</a></h2></div></div></div><p>Defines a single bucket of all the documents within the search execution
+context. This context is defined by the indices and the document types you’re
+searching on, but is <span class="strong"><strong>not</strong></span> influenced by the search query itself.</p><div class="note admon"><div class="icon"><img alt="Note" src="images/icons/note.png" /></div><div class="admon_content"><p>Global aggregators can only be placed as top level aggregators because
+        it doesn’t make sense to embed a global aggregator within another
+        bucket aggregator.</p></div></div><p>Example:</p><div class="pre_wrapper"><pre class="programlisting prettyprint lang-js">POST /sales/_search?size=0
+{
     "query" : {
-        "match" : { "title" : "shirt" }
+        "match" : { "type" : "t-shirt" }
     },
     "aggs" : {
         "all_products" : {
-            "global" : {}, <a id="CO73-1"></a><span><img src="images/icons/callouts/1.png" alt="" /></span>
-            "aggs" : { <a id="CO73-2"></a><span><img src="images/icons/callouts/2.png" alt="" /></span>
+            "global" : {}, <a id="CO74-1"></a><span><img src="images/icons/callouts/1.png" alt="" /></span>
+            "aggs" : { <a id="CO74-2"></a><span><img src="images/icons/callouts/2.png" alt="" /></span>
                 "avg_price" : { "avg" : { "field" : "price" } }
             }
-        }
+        },
+        "t_shirts": { "avg" : { "field" : "price" } }
     }
-}</pre></div><div class="calloutlist"><table border="0" summary="Callout list"><tr><td width="5%" valign="top" align="left"><p><a href="#CO73-1"><span><img src="images/icons/callouts/1.png" alt="" /></span></a> </p></td><td valign="top" align="left"><p>
+}</pre></div><div class="console_widget" data-snippet="snippets/search-aggregations-bucket-global-aggregation/1.json"></div><div class="calloutlist"><table border="0" summary="Callout list"><tr><td width="5%" valign="top" align="left"><p><a href="#CO74-1"><span><img src="images/icons/callouts/1.png" alt="" /></span></a> </p></td><td valign="top" align="left"><p>
 The <code class="literal">global</code> aggregation has an empty body
-</p></td></tr><tr><td width="5%" valign="top" align="left"><p><a href="#CO73-2"><span><img src="images/icons/callouts/2.png" alt="" /></span></a> </p></td><td valign="top" align="left"><p>
+</p></td></tr><tr><td width="5%" valign="top" align="left"><p><a href="#CO74-2"><span><img src="images/icons/callouts/2.png" alt="" /></span></a> </p></td><td valign="top" align="left"><p>
 The sub-aggregations that are registered for this <code class="literal">global</code> aggregation
-</p></td></tr></table></div><p>The above aggregation demonstrates how one would compute aggregations (<code class="literal">avg_price</code> in this example) on all the documents in the search context, regardless of the query (in our example, it will compute the average price over all products in our catalog, not just on the "shirts").</p><p>The response for the above aggregation:</p><div class="pre_wrapper"><pre class="programlisting prettyprint lang-js">{
+</p></td></tr></table></div><p>The above aggregation demonstrates how one would compute aggregations
+(<code class="literal">avg_price</code> in this example) on all the documents in the search context,
+regardless of the query (in our example, it will compute the average price over
+all products in our catalog, not just on the "shirts").</p><p>The response for the above aggregation:</p><div class="pre_wrapper"><pre class="programlisting prettyprint lang-js">{
     ...
-
     "aggregations" : {
         "all_products" : {
-            "doc_count" : 100, <a id="CO74-1"></a><span><img src="images/icons/callouts/1.png" alt="" /></span>
+            "doc_count" : 7, <a id="CO75-1"></a><span><img src="images/icons/callouts/1.png" alt="" /></span>
             "avg_price" : {
-                "value" : 56.3
+                "value" : 140.71428571428572 <a id="CO75-2"></a><span><img src="images/icons/callouts/2.png" alt="" /></span>
             }
+        },
+        "t_shirts": {
+            "value" : 128.33333333333334 <a id="CO75-3"></a><span><img src="images/icons/callouts/3.png" alt="" /></span>
         }
     }
-}</pre></div><div class="calloutlist"><table border="0" summary="Callout list"><tr><td width="5%" valign="top" align="left"><p><a href="#CO74-1"><span><img src="images/icons/callouts/1.png" alt="" /></span></a> </p></td><td valign="top" align="left"><p>
-The number of documents that were aggregated (in our case, all documents within the search context)
+}</pre></div><div class="calloutlist"><table border="0" summary="Callout list"><tr><td width="5%" valign="top" align="left"><p><a href="#CO75-1"><span><img src="images/icons/callouts/1.png" alt="" /></span></a> </p></td><td valign="top" align="left"><p>
+The number of documents that were aggregated (in our case, all documents
+within the search context)
+</p></td></tr><tr><td width="5%" valign="top" align="left"><p><a href="#CO75-2"><span><img src="images/icons/callouts/2.png" alt="" /></span></a> </p></td><td valign="top" align="left"><p>
+The average price of all products in the index
+</p></td></tr><tr><td width="5%" valign="top" align="left"><p><a href="#CO75-3"><span><img src="images/icons/callouts/3.png" alt="" /></span></a> </p></td><td valign="top" align="left"><p>
+The average price of all t-shirts
 </p></td></tr></table></div></div><div class="navfooter"><span class="prev"><a href="search-aggregations-bucket-geohashgrid-aggregation.html">
               « 
               GeoHash grid Aggregation</a>
@@ -937,38 +952,38 @@ The number of documents that were aggregated (in our case, all documents within 
 <style type="text/css">
 	
     
-		.facebook{background:url("https://static-www.elastic.co/assets/bltf546ff2e0a8f2de5/facebook.svg?q=700") no-repeat;}
+		.facebook{background:url("https://stag-static-www.elastic.co/assets/bltf546ff2e0a8f2de5/facebook.svg?q=650") no-repeat;}
     
     
-      .facebook:hover {background:url("https://static-www.elastic.co/assets/bltc24cf11c714ecfc4/facebook-hover.svg?q=700")}		
-    
-	
-    
-		.twitter{background:url("https://static-www.elastic.co/assets/bltdd9556d6b24e2b85/twitter.svg?q=700") no-repeat;}
-    
-    
-      .twitter:hover {background:url("https://static-www.elastic.co/assets/blt90b0372cc07a54d3/twitter-hover.svg?q=700")}		
+      .facebook:hover {background:url("https://stag-static-www.elastic.co/assets/bltc24cf11c714ecfc4/facebook-hover.svg?q=650")}		
     
 	
     
-		.linkedin{background:url("https://static-www.elastic.co/assets/bltc4a77e0f52ce07f1/linkedin.svg?q=700") no-repeat;}
+		.twitter{background:url("https://stag-static-www.elastic.co/assets/bltdd9556d6b24e2b85/twitter.svg?q=650") no-repeat;}
     
     
-      .linkedin:hover {background:url("https://static-www.elastic.co/assets/blt01ce654380e4ea6c/linkedin-hover.svg?q=700")}		
-    
-	
-    
-		.xing{background:url("https://static-www.elastic.co/assets/bltc6347078dcc9ec76/xing.svg?q=700") no-repeat;}
-    
-    
-      .xing:hover {background:url("https://static-www.elastic.co/assets/bltededebe5f7521a39/xing-hover.svg?q=700")}		
+      .twitter:hover {background:url("https://stag-static-www.elastic.co/assets/blt90b0372cc07a54d3/twitter-hover.svg?q=650")}		
     
 	
     
-		.youtube{background:url("https://static-www.elastic.co/assets/blt4982061ce1aebc7f/youtube.svg?q=700") no-repeat;}
+		.linkedin{background:url("https://stag-static-www.elastic.co/assets/bltc4a77e0f52ce07f1/linkedin.svg?q=650") no-repeat;}
     
     
-      .youtube:hover {background:url("https://static-www.elastic.co/assets/bltddeb6c6404ae81a5/youtube-hover.svg?q=700")}		
+      .linkedin:hover {background:url("https://stag-static-www.elastic.co/assets/blt01ce654380e4ea6c/linkedin-hover.svg?q=650")}		
+    
+	
+    
+		.xing{background:url("https://stag-static-www.elastic.co/assets/bltc6347078dcc9ec76/xing.svg?q=650") no-repeat;}
+    
+    
+      .xing:hover {background:url("https://stag-static-www.elastic.co/assets/bltededebe5f7521a39/xing-hover.svg?q=650")}		
+    
+	
+    
+		.youtube{background:url("https://stag-static-www.elastic.co/assets/blt4982061ce1aebc7f/youtube.svg?q=650") no-repeat;}
+    
+    
+      .youtube:hover {background:url("https://stag-static-www.elastic.co/assets/bltddeb6c6404ae81a5/youtube-hover.svg?q=650")}		
     
 	
 </style>
@@ -1000,10 +1015,10 @@ The number of documents that were aggregated (in our case, all documents within 
 	var suggestionsUrl = "https://search.elastic.co/suggest";	
 	var localeUrl = '{"relative_url_prefix":"/","code":"en-us","url":"/guide_template"}';
 </script>
-<script src="https://static-www.elastic.co/static/js/jquery.autocomplete.js?q=700"></script>
-<script type="text/javascript" src="https://static-www.elastic.co/static/js/slick.min.js?q=700"></script>
-<script src="https://static-www.elastic.co/static/js/nav-v5.js?q=700"></script>
-<script src="https://static-www.elastic.co/static/js/script.js?q=700"></script> 
+<script src="https://stag-static-www.elastic.co/static/js/jquery.autocomplete.js?q=650"></script>
+<script type="text/javascript" src="https://stag-static-www.elastic.co/static/js/slick.min.js?q=650"></script>
+<script src="https://stag-static-www.elastic.co/static/js/nav-v5.js?q=650"></script>
+<script src="https://stag-static-www.elastic.co/static/js/script.js?q=650"></script> 
      
      <style></style>
      

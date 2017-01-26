@@ -72,13 +72,13 @@
 	   
 
     <!-- css -->
-    <link href="https://static-www.elastic.co/static/css/main.css?q=700" rel="stylesheet">
+    <link href="https://stag-static-www.elastic.co/static/css/main.css?q=650" rel="stylesheet">
     
     
 
-    <script src="https://static-www.elastic.co/static/js/jquery.min.js?q=700"></script>
-    <script src="https://static-www.elastic.co/static/js/bootstrap.min.js?q=700"></script>
-    <script src="https://static-www.elastic.co/static/js/jquery.cookie.js?q=700"></script>
+    <script src="https://stag-static-www.elastic.co/static/js/jquery.min.js?q=650"></script>
+    <script src="https://stag-static-www.elastic.co/static/js/bootstrap.min.js?q=650"></script>
+    <script src="https://stag-static-www.elastic.co/static/js/jquery.cookie.js?q=650"></script>
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -122,7 +122,7 @@
 
 
 	
-	<link type="text/css" rel="stylesheet" href="https://static-www.elastic.co/static/css/guide.css?q=700" />
+	<link type="text/css" rel="stylesheet" href="https://stag-static-www.elastic.co/static/css/guide.css?q=650" />
 
 
   
@@ -200,7 +200,7 @@
           <div class="navbar-brand" id="elastic">
             <h1>
               <a class="logo-m hidden-sm hidden-md hidden-lg" href="/">
-                <img src="https://static-www.elastic.co/assets/bltd5ac38b4549d53de/elastic-logo-mobile (1).svg?q=700" alt="elastic-logo-mobile">
+                <img src="https://stag-static-www.elastic.co/assets/bltd5ac38b4549d53de/elastic-logo-mobile (1).svg?q=650" alt="elastic-logo-mobile">
               </a>
             </h1>
           </div>
@@ -249,7 +249,7 @@
       <div class="navbar-brand hidden-xs" id="elastic">
         <h1>
           <a class="hidden-xs" id="elastic-logo" href="/">
-            <img src="https://static-www.elastic.co/assets/blt6050efb80ceabd47/elastic-logo (2).svg?q=700" alt="elastic-logo">
+            <img src="https://stag-static-www.elastic.co/assets/blt6050efb80ceabd47/elastic-logo (2).svg?q=650" alt="elastic-logo">
           </a>
         </h1>
       </div>
@@ -382,24 +382,24 @@
   </div>
 </div>
 </header>
-<link rel="stylesheet" type="text/css" href="https://static-www.elastic.co/static/css/horizon-swiper.min.css?q=700">
+<link rel="stylesheet" type="text/css" href="https://stag-static-www.elastic.co/static/css/horizon-swiper.min.css?q=650">
 <style> 
     
       .m-shortcuts li a.m-search {
-        background: url("https://static-www.elastic.co/assets/blt7b9c4fe6528dc4ef/m-search-icon.png?q=700") no-repeat scroll center center rgba(0, 0, 0, 0);
+        background: url("https://stag-static-www.elastic.co/assets/blt7b9c4fe6528dc4ef/m-search-icon.png?q=650") no-repeat scroll center center rgba(0, 0, 0, 0);
         background-size: contain;}
     
       .m-shortcuts li a.m-docs {
-        background: url("https://static-www.elastic.co/assets/blt44d8b7530a76d01c/m-guide-icon.png?q=700") no-repeat scroll center center rgba(0, 0, 0, 0);
+        background: url("https://stag-static-www.elastic.co/assets/blt44d8b7530a76d01c/m-guide-icon.png?q=650") no-repeat scroll center center rgba(0, 0, 0, 0);
         background-size: contain;}
     
       .m-shortcuts li a.m-contact {
-        background: url("https://static-www.elastic.co/assets/blt878040795c9d083b/m-contact-icon.png?q=700") no-repeat scroll center center rgba(0, 0, 0, 0);
+        background: url("https://stag-static-www.elastic.co/assets/blt878040795c9d083b/m-contact-icon.png?q=650") no-repeat scroll center center rgba(0, 0, 0, 0);
         background-size: contain;}
     
     
 </style>
-<script type="text/javascript" src="https://static-www.elastic.co/static/js/horizon-swiper.min.js?q=700"></script>
+<script type="text/javascript" src="https://stag-static-www.elastic.co/static/js/horizon-swiper.min.js?q=650"></script>
 <script type="text/javascript">
   $(document).ready( function(){
     // if($('#scrollable-pane li').length > 3){
@@ -547,7 +547,7 @@
           
 
           
-	<section id="guide">
+	<section id="guide" lang="en">
 		<div class="container">
 			<div class="row">
 			  <!-- start body -->
@@ -581,33 +581,38 @@ The overall structure of this query tree will resemble your original Elasticsear
        "type": "BooleanQuery",
        "description": "message:message message:number",
        "time": "1.873811000ms",
-       "breakdown": {...},               <a id="CO36-1"></a><span><img src="images/icons/callouts/1.png" alt="" /></span>
+       "time_in_nanos": "1873811",
+       "breakdown": {...},               <a id="CO37-1"></a><span><img src="images/icons/callouts/1.png" alt="" /></span>
        "children": [
           {
              "type": "TermQuery",
              "description": "message:message",
              "time": "0.3919430000ms",
+             "time_in_nanos": "391943",
              "breakdown": {...}
           },
           {
              "type": "TermQuery",
              "description": "message:number",
              "time": "0.2106820000ms",
+             "time_in_nanos": "210682",
              "breakdown": {...}
           }
        ]
     }
-]</pre></div><div class="calloutlist"><table border="0" summary="Callout list"><tr><td width="5%" valign="top" align="left"><p><a href="#CO36-1"><span><img src="images/icons/callouts/1.png" alt="" /></span></a> </p></td><td valign="top" align="left"><p>
+]</pre></div><div class="calloutlist"><table border="0" summary="Callout list"><tr><td width="5%" valign="top" align="left"><p><a href="#CO37-1"><span><img src="images/icons/callouts/1.png" alt="" /></span></a> </p></td><td valign="top" align="left"><p>
 The breakdown timings are omitted for simplicity
 </p></td></tr></table></div><p>Based on the profile structure, we can see that our <code class="literal">match</code> query was rewritten by Lucene into a BooleanQuery with two
-clauses (both holding a TermQuery).  The <code class="literal">"type"</code> field displays the Lucene class name, and often aligns with
-the equivalent name in Elasticsearch.  The <code class="literal">"description"</code> field displays the Lucene explanation text for the query, and
-is made available to help differentiating between parts of your query (e.g. both <code class="literal">"message:search"</code> and <code class="literal">"message:test"</code>
-are TermQuery’s and would appear identical otherwise.</p><p>The <code class="literal">"time"</code> field shows that this query took ~15ms for the entire BooleanQuery to execute.  The recorded time is inclusive
-of all children.</p><p>The <code class="literal">"breakdown"</code> field will give detailed stats about how the time was spent, we’ll look at
-that in a moment.  Finally, the <code class="literal">"children"</code> array lists any sub-queries that may be present.  Because we searched for two
+clauses (both holding a TermQuery).  The <code class="literal">type</code> field displays the Lucene class name, and often aligns with
+the equivalent name in Elasticsearch.  The <code class="literal">description</code> field displays the Lucene explanation text for the query, and
+is made available to help differentiating between parts of your query (e.g. both <code class="literal">message:search</code> and <code class="literal">message:test</code>
+are TermQuery’s and would appear identical otherwise.</p><p>The <code class="literal">time</code> field shows that this query took ~1.8ms for the entire BooleanQuery to execute.  The recorded time is inclusive
+of all children.</p><p>The <code class="literal">time_in nanos</code> field shows the timing information in an exact, machine readable format in nanoseconds.</p><p>The <code class="literal">breakdown</code> field will give detailed stats about how the time was spent, we’ll look at
+that in a moment.  Finally, the <code class="literal">children</code> array lists any sub-queries that may be present.  Because we searched for two
 values ("search test"), our BooleanQuery holds two children TermQueries.  They have identical information (type, time,
-breakdown, etc).  Children are allowed to have their own children.</p><div class="section"><div class="titlepage"><div><div><h4 class="title"><a id="_timing_breakdown"></a>Timing Breakdown<a href="https://github.com/elastic/elasticsearch/edit/5.x/docs/reference/search/profile.asciidoc" class="edit_me" title="Edit this page on GitHub" rel="nofollow">edit</a></h4></div></div></div><p>The <code class="literal">"breakdown"</code> component lists detailed timing statistics about low-level Lucene execution:</p><div class="pre_wrapper"><pre class="programlisting prettyprint lang-js">"breakdown": {
+breakdown, etc).  Children are allowed to have their own children.</p><div class="note admon"><div class="icon"><img alt="Note" src="images/icons/note.png" /></div><div class="admon_content"><p>The <code class="literal">time</code> field is only intended for human consumption. If you need exact timing values use <code class="literal">time_in nanos</code>. The <code class="literal">time</code>
+field is currently printed by default, but this will change with the next major version (6.0.0) where <code class="literal">time_in_nanos</code> will be
+printed by default.</p></div></div><div class="section"><div class="titlepage"><div><div><h4 class="title"><a id="_timing_breakdown"></a>Timing Breakdown<a href="https://github.com/elastic/elasticsearch/edit/5.x/docs/reference/search/profile.asciidoc" class="edit_me" title="Edit this page on GitHub" rel="nofollow">edit</a></h4></div></div></div><p>The <code class="literal">breakdown</code> component lists detailed timing statistics about low-level Lucene execution:</p><div class="pre_wrapper"><pre class="programlisting prettyprint lang-js">"breakdown": {
    "score": 51306,
    "score_count": 4,
    "build_scorer": 2935582,
@@ -621,7 +626,7 @@ breakdown, etc).  Children are allowed to have their own children.</p><div class
    "advance": 0,
    "advance_count": 0
 }</pre></div><p>Timings are listed in wall-clock nanoseconds and are not normalized at all.  All caveats about the overall
-<code class="literal">"time"</code> apply here.  The intention of the breakdown is to give you a feel for A) what machinery in Lucene is
+<code class="literal">time</code> apply here.  The intention of the breakdown is to give you a feel for A) what machinery in Lucene is
 actually eating time, and B) the magnitude of differences in times between the various components.  Like the overall time,
 the breakdown is inclusive of all children times.</p><p>The meaning of the stats are as follows:</p><h4><a id="_all_parameters_3"></a>All parameters:<a href="https://github.com/elastic/elasticsearch/edit/5.x/docs/reference/search/profile.asciidoc" class="edit_me" title="Edit this page on GitHub" rel="nofollow">edit</a></h4><div class="horizontal"><table cellpadding="4px" border="0"><colgroup><col /><col /></colgroup><tbody valign="top"><tr><td valign="top">
 <p>
@@ -722,17 +727,19 @@ filters, etc.</p><p>Looking at the previous example:</p><div class="pre_wrapper"
       "name": "CancellableCollector",
       "reason": "search_cancelled",
       "time": "0.3043110000ms",
+      "time_in_nanos": "304311",
       "children": [
         {
           "name": "SimpleTopScoreDocCollector",
           "reason": "search_top_hits",
-          "time": "0.03227300000ms"
+          "time": "0.03227300000ms",
+          "time_in_nanos": "32273"
         }
       ]
    }
 ]</pre></div><p>We see a single collector named <code class="literal">SimpleTopScoreDocCollector</code> wrapped into <code class="literal">CancellableCollector</code>. <code class="literal">SimpleTopScoreDocCollector</code> is the default "scoring and sorting"
-<code class="literal">Collector</code> used by Elasticsearch.  The <code class="literal">"reason"</code> field attempts to give a plain english description of the class name.  The
-<code class="literal">"time"</code> is similar to the time in the Query tree: a wall-clock time inclusive of all children.  Similarly, <code class="literal">children</code> lists
+<code class="literal">Collector</code> used by Elasticsearch.  The <code class="literal">reason</code> field attempts to give a plain english description of the class name.  The
+<code class="literal">time</code> is similar to the time in the Query tree: a wall-clock time inclusive of all children.  Similarly, <code class="literal">children</code> lists
 all sub-collectors. The <code class="literal">CancellableCollector</code> that wraps <code class="literal">SimpleTopScoreDocCollector</code> is used by elasticsearch to detect if the current
 search was cancelled and stop collecting documents as soon as it occurs.</p><p>It should be noted that Collector times are <span class="strong"><strong>independent</strong></span> from the Query times.  They are calculated, combined
 and normalized independently!  Due to the nature of Lucene’s execution, it is impossible to "merge" the times
@@ -880,6 +887,7 @@ A post_filter
                            "type": "TermQuery",
                            "description": "my_field:foo",
                            "time": "0.4094560000ms",
+                           "time_in_nanos": "409456",
                            "breakdown": {
                               "score": 0,
                               "score_count": 1,
@@ -899,6 +907,7 @@ A post_filter
                            "type": "TermQuery",
                            "description": "message:search",
                            "time": "0.3037020000ms",
+                           "time_in_nanos": "303702",
                            "breakdown": {
                               "score": 0,
                               "score_count": 1,
@@ -921,23 +930,27 @@ A post_filter
                            "name": "MultiCollector",
                            "reason": "search_multi",
                            "time": "1.378943000ms",
+                           "time_in_nanos": "1378943",
                            "children": [
                               {
                                  "name": "FilteredCollector",
                                  "reason": "search_post_filter",
                                  "time": "0.4036590000ms",
+                                 "time_in_nanos": "403659",
                                  "children": [
                                     {
                                        "name": "SimpleTopScoreDocCollector",
                                        "reason": "search_top_hits",
-                                       "time": "0.006391000000ms"
+                                       "time": "0.006391000000ms",
+                                       "time_in_nanos": "6391"
                                     }
                                  ]
                               },
                               {
                                  "name": "BucketCollector: [[non_global_term, another_agg]]",
                                  "reason": "aggregation",
-                                 "time": "0.9546020000ms"
+                                 "time": "0.9546020000ms",
+                                 "time_in_nanos": "954602"
                               }
                            ]
                         }
@@ -949,6 +962,7 @@ A post_filter
                            "type": "MatchAllDocsQuery",
                            "description": "*:*",
                            "time": "0.04829300000ms",
+                           "time_in_nanos": "48293",
                            "breakdown": {
                               "score": 0,
                               "score_count": 1,
@@ -970,7 +984,8 @@ A post_filter
                         {
                            "name": "GlobalAggregator: [global_agg]",
                            "reason": "aggregation_global",
-                           "time": "0.1226310000ms"
+                           "time": "0.1226310000ms",
+                           "time_in_nanos": "122631"
                         }
                      ]
                   }
@@ -1337,38 +1352,38 @@ ignore it’s children if you find the details too tricky to interpret.</p><p>Ho
 <style type="text/css">
 	
     
-		.facebook{background:url("https://static-www.elastic.co/assets/bltf546ff2e0a8f2de5/facebook.svg?q=700") no-repeat;}
+		.facebook{background:url("https://stag-static-www.elastic.co/assets/bltf546ff2e0a8f2de5/facebook.svg?q=650") no-repeat;}
     
     
-      .facebook:hover {background:url("https://static-www.elastic.co/assets/bltc24cf11c714ecfc4/facebook-hover.svg?q=700")}		
-    
-	
-    
-		.twitter{background:url("https://static-www.elastic.co/assets/bltdd9556d6b24e2b85/twitter.svg?q=700") no-repeat;}
-    
-    
-      .twitter:hover {background:url("https://static-www.elastic.co/assets/blt90b0372cc07a54d3/twitter-hover.svg?q=700")}		
+      .facebook:hover {background:url("https://stag-static-www.elastic.co/assets/bltc24cf11c714ecfc4/facebook-hover.svg?q=650")}		
     
 	
     
-		.linkedin{background:url("https://static-www.elastic.co/assets/bltc4a77e0f52ce07f1/linkedin.svg?q=700") no-repeat;}
+		.twitter{background:url("https://stag-static-www.elastic.co/assets/bltdd9556d6b24e2b85/twitter.svg?q=650") no-repeat;}
     
     
-      .linkedin:hover {background:url("https://static-www.elastic.co/assets/blt01ce654380e4ea6c/linkedin-hover.svg?q=700")}		
-    
-	
-    
-		.xing{background:url("https://static-www.elastic.co/assets/bltc6347078dcc9ec76/xing.svg?q=700") no-repeat;}
-    
-    
-      .xing:hover {background:url("https://static-www.elastic.co/assets/bltededebe5f7521a39/xing-hover.svg?q=700")}		
+      .twitter:hover {background:url("https://stag-static-www.elastic.co/assets/blt90b0372cc07a54d3/twitter-hover.svg?q=650")}		
     
 	
     
-		.youtube{background:url("https://static-www.elastic.co/assets/blt4982061ce1aebc7f/youtube.svg?q=700") no-repeat;}
+		.linkedin{background:url("https://stag-static-www.elastic.co/assets/bltc4a77e0f52ce07f1/linkedin.svg?q=650") no-repeat;}
     
     
-      .youtube:hover {background:url("https://static-www.elastic.co/assets/bltddeb6c6404ae81a5/youtube-hover.svg?q=700")}		
+      .linkedin:hover {background:url("https://stag-static-www.elastic.co/assets/blt01ce654380e4ea6c/linkedin-hover.svg?q=650")}		
+    
+	
+    
+		.xing{background:url("https://stag-static-www.elastic.co/assets/bltc6347078dcc9ec76/xing.svg?q=650") no-repeat;}
+    
+    
+      .xing:hover {background:url("https://stag-static-www.elastic.co/assets/bltededebe5f7521a39/xing-hover.svg?q=650")}		
+    
+	
+    
+		.youtube{background:url("https://stag-static-www.elastic.co/assets/blt4982061ce1aebc7f/youtube.svg?q=650") no-repeat;}
+    
+    
+      .youtube:hover {background:url("https://stag-static-www.elastic.co/assets/bltddeb6c6404ae81a5/youtube-hover.svg?q=650")}		
     
 	
 </style>
@@ -1400,10 +1415,10 @@ ignore it’s children if you find the details too tricky to interpret.</p><p>Ho
 	var suggestionsUrl = "https://search.elastic.co/suggest";	
 	var localeUrl = '{"relative_url_prefix":"/","code":"en-us","url":"/guide_template"}';
 </script>
-<script src="https://static-www.elastic.co/static/js/jquery.autocomplete.js?q=700"></script>
-<script type="text/javascript" src="https://static-www.elastic.co/static/js/slick.min.js?q=700"></script>
-<script src="https://static-www.elastic.co/static/js/nav-v5.js?q=700"></script>
-<script src="https://static-www.elastic.co/static/js/script.js?q=700"></script> 
+<script src="https://stag-static-www.elastic.co/static/js/jquery.autocomplete.js?q=650"></script>
+<script type="text/javascript" src="https://stag-static-www.elastic.co/static/js/slick.min.js?q=650"></script>
+<script src="https://stag-static-www.elastic.co/static/js/nav-v5.js?q=650"></script>
+<script src="https://stag-static-www.elastic.co/static/js/script.js?q=650"></script> 
      
      <style></style>
      

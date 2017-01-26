@@ -6,28 +6,28 @@ Repo: beats
   _filebeat/docs_1.3                  13ac8f7e   Docs: Fix path for beats-dir
   _filebeat/docs_5.0                  fa5b0f2a   Add golang version for jenkins compatibility
   _filebeat/docs_5.1                  7d3021ff   Update testing env to latest 5.1.2 build (#3341)
-  _filebeat/docs_5.x                  581d5e60   Update 5.x branch version to 5.3 (#3291)
-  _filebeat/docs_master               6043bd4a   Make import_dashboards have non-zero exit code on error (#3252)
+  _filebeat/docs_5.x                  d4efb35d   Merge pull request #3417 from elastic/master
+  _filebeat/docs_master               32659703   Add beta header to every page (#3458)
   _libbeat/docs_1.0.1                 890ae174   Docs: Fix path for beats-dir
   _libbeat/docs_1.1                   df036f1a   Docs: Fix path for beats-dir
   _libbeat/docs_1.2                   4a8bd970   Docs: Fix path for beats-dir
   _libbeat/docs_1.3                   13ac8f7e   Docs: Fix path for beats-dir
   _libbeat/docs_5.0                   fa5b0f2a   Add golang version for jenkins compatibility
   _libbeat/docs_5.1                   7d3021ff   Update testing env to latest 5.1.2 build (#3341)
-  _libbeat/docs_5.x                   581d5e60   Update 5.x branch version to 5.3 (#3291)
-  _libbeat/docs_master                6043bd4a   Make import_dashboards have non-zero exit code on error (#3252)
+  _libbeat/docs_5.x                   d4efb35d   Merge pull request #3417 from elastic/master
+  _libbeat/docs_master                32659703   Add beta header to every page (#3458)
   _metricbeat/docs_5.0                fa5b0f2a   Add golang version for jenkins compatibility
   _metricbeat/docs_5.1                7d3021ff   Update testing env to latest 5.1.2 build (#3341)
-  _metricbeat/docs_5.x                581d5e60   Update 5.x branch version to 5.3 (#3291)
-  _metricbeat/docs_master             6043bd4a   Make import_dashboards have non-zero exit code on error (#3252)
+  _metricbeat/docs_5.x                d4efb35d   Merge pull request #3417 from elastic/master
+  _metricbeat/docs_master             32659703   Add beta header to every page (#3458)
   _packetbeat/docs_1.0.1              890ae174   Docs: Fix path for beats-dir
   _packetbeat/docs_1.1                df036f1a   Docs: Fix path for beats-dir
   _packetbeat/docs_1.2                4a8bd970   Docs: Fix path for beats-dir
   _packetbeat/docs_1.3                13ac8f7e   Docs: Fix path for beats-dir
   _packetbeat/docs_5.0                fa5b0f2a   Add golang version for jenkins compatibility
   _packetbeat/docs_5.1                7d3021ff   Update testing env to latest 5.1.2 build (#3341)
-  _packetbeat/docs_5.x                581d5e60   Update 5.x branch version to 5.3 (#3291)
-  _packetbeat/docs_master             6043bd4a   Make import_dashboards have non-zero exit code on error (#3252)
+  _packetbeat/docs_5.x                d4efb35d   Merge pull request #3417 from elastic/master
+  _packetbeat/docs_master             32659703   Add beta header to every page (#3458)
   _topbeat/docs_1.0.1                 890ae174   Docs: Fix path for beats-dir
   _topbeat/docs_1.1                   df036f1a   Docs: Fix path for beats-dir
   _topbeat/docs_1.2                   4a8bd970   Docs: Fix path for beats-dir
@@ -37,8 +37,8 @@ Repo: beats
   _winlogbeat/docs_1.3                13ac8f7e   Docs: Fix path for beats-dir
   _winlogbeat/docs_5.0                fa5b0f2a   Add golang version for jenkins compatibility
   _winlogbeat/docs_5.1                7d3021ff   Update testing env to latest 5.1.2 build (#3341)
-  _winlogbeat/docs_5.x                581d5e60   Update 5.x branch version to 5.3 (#3291)
-  _winlogbeat/docs_master             6043bd4a   Make import_dashboards have non-zero exit code on error (#3252)
+  _winlogbeat/docs_5.x                d4efb35d   Merge pull request #3417 from elastic/master
+  _winlogbeat/docs_master             32659703   Add beta header to every page (#3458)
 
 Repo: cloud
 --------------------------------------------------------------------------------
@@ -57,7 +57,7 @@ Repo: curator
 
 Repo: elasticsearch
 --------------------------------------------------------------------------------
-  _docs/community-clients_master      d6751460   Fix out-of-date Javadocs on Security.java
+  _docs/community-clients_master      281250de   Remove DFS_QUERY_AND_FETCH as a search type (#22787)
   _docs/groovy-api_0.90               d2bcbdfc   Make REST spec param types consistent
   _docs/groovy-api_1.3                1f380675   Fixed doc version links
   _docs/groovy-api_1.4                49ed5352   Fixed doc version links
@@ -66,13 +66,13 @@ Repo: elasticsearch
   _docs/groovy-api_1.7                54669d69   Bump versions and add BWC indices
   _docs/groovy-api_2.0                cbe06d19   Fixed doc version links
   _docs/groovy-api_2.1                9a7d5e7a   Fixed doc version links
-  _docs/groovy-api_2.2                4d5b739d   Specify fielddata formats in string docs (#21588)
+  _docs/groovy-api_2.2                cecf410d   Updating Typo (#22798)
   _docs/groovy-api_2.3                e4320643   Specify fielddata formats in string docs (#21588)
   _docs/groovy-api_2.4                f850e299   Release: Bumping to 2.4.5-SNAPSHOT
-  _docs/groovy-api_5.0                da3af77f   [TEST] No longer randomly block on the index-N files in the MockRepository, because the getRepositoryData() call depends on it, which is used in non-synchronized actions such as getting snapshot status.
-  _docs/groovy-api_5.1                4c8a43c4   Fix out-of-date Javadocs on Security.java
-  _docs/groovy-api_5.x                fa54063b   Fix out-of-date Javadocs on Security.java
-  _docs/groovy-api_master             d6751460   Fix out-of-date Javadocs on Security.java
+  _docs/groovy-api_5.0                621f1417   [TEST] fixes SharedClusterSnapshotRestoreIT test so it assumes we are working with a repository that supports atomic move operations
+  _docs/groovy-api_5.1                d5d2a916   [TEST] fixes SharedClusterSnapshotRestoreIT test so it assumes we are working with a repository that supports atomic move operations
+  _docs/groovy-api_5.x                148cd688   fix date-processor to a new default year for every new pipeline execution. (#22601)
+  _docs/groovy-api_master             281250de   Remove DFS_QUERY_AND_FETCH as a search type (#22787)
   _docs/java-api_0.90                 d2bcbdfc   Make REST spec param types consistent
   _docs/java-api_1.3                  1f380675   Fixed doc version links
   _docs/java-api_1.4                  49ed5352   Fixed doc version links
@@ -81,29 +81,29 @@ Repo: elasticsearch
   _docs/java-api_1.7                  54669d69   Bump versions and add BWC indices
   _docs/java-api_2.0                  cbe06d19   Fixed doc version links
   _docs/java-api_2.1                  9a7d5e7a   Fixed doc version links
-  _docs/java-api_2.2                  4d5b739d   Specify fielddata formats in string docs (#21588)
+  _docs/java-api_2.2                  cecf410d   Updating Typo (#22798)
   _docs/java-api_2.3                  e4320643   Specify fielddata formats in string docs (#21588)
   _docs/java-api_2.4                  f850e299   Release: Bumping to 2.4.5-SNAPSHOT
-  _docs/java-api_5.0                  da3af77f   [TEST] No longer randomly block on the index-N files in the MockRepository, because the getRepositoryData() call depends on it, which is used in non-synchronized actions such as getting snapshot status.
-  _docs/java-api_5.1                  4c8a43c4   Fix out-of-date Javadocs on Security.java
-  _docs/java-api_5.x                  fa54063b   Fix out-of-date Javadocs on Security.java
-  _docs/java-api_master               d6751460   Fix out-of-date Javadocs on Security.java
-  _docs/java-rest_5.0                 da3af77f   [TEST] No longer randomly block on the index-N files in the MockRepository, because the getRepositoryData() call depends on it, which is used in non-synchronized actions such as getting snapshot status.
-  _docs/java-rest_5.1                 4c8a43c4   Fix out-of-date Javadocs on Security.java
-  _docs/java-rest_5.x                 fa54063b   Fix out-of-date Javadocs on Security.java
-  _docs/java-rest_master              d6751460   Fix out-of-date Javadocs on Security.java
-  _docs/perl_master                   d6751460   Fix out-of-date Javadocs on Security.java
+  _docs/java-api_5.0                  621f1417   [TEST] fixes SharedClusterSnapshotRestoreIT test so it assumes we are working with a repository that supports atomic move operations
+  _docs/java-api_5.1                  d5d2a916   [TEST] fixes SharedClusterSnapshotRestoreIT test so it assumes we are working with a repository that supports atomic move operations
+  _docs/java-api_5.x                  148cd688   fix date-processor to a new default year for every new pipeline execution. (#22601)
+  _docs/java-api_master               281250de   Remove DFS_QUERY_AND_FETCH as a search type (#22787)
+  _docs/java-rest_5.0                 621f1417   [TEST] fixes SharedClusterSnapshotRestoreIT test so it assumes we are working with a repository that supports atomic move operations
+  _docs/java-rest_5.1                 d5d2a916   [TEST] fixes SharedClusterSnapshotRestoreIT test so it assumes we are working with a repository that supports atomic move operations
+  _docs/java-rest_5.x                 148cd688   fix date-processor to a new default year for every new pipeline execution. (#22601)
+  _docs/java-rest_master              281250de   Remove DFS_QUERY_AND_FETCH as a search type (#22787)
+  _docs/perl_master                   281250de   Remove DFS_QUERY_AND_FETCH as a search type (#22787)
   _docs/plugins_1.7                   54669d69   Bump versions and add BWC indices
   _docs/plugins_2.0                   cbe06d19   Fixed doc version links
   _docs/plugins_2.1                   9a7d5e7a   Fixed doc version links
-  _docs/plugins_2.2                   4d5b739d   Specify fielddata formats in string docs (#21588)
+  _docs/plugins_2.2                   cecf410d   Updating Typo (#22798)
   _docs/plugins_2.3                   e4320643   Specify fielddata formats in string docs (#21588)
   _docs/plugins_2.4                   f850e299   Release: Bumping to 2.4.5-SNAPSHOT
-  _docs/plugins_5.0                   da3af77f   [TEST] No longer randomly block on the index-N files in the MockRepository, because the getRepositoryData() call depends on it, which is used in non-synchronized actions such as getting snapshot status.
-  _docs/plugins_5.1                   4c8a43c4   Fix out-of-date Javadocs on Security.java
-  _docs/plugins_5.x                   fa54063b   Fix out-of-date Javadocs on Security.java
-  _docs/plugins_master                d6751460   Fix out-of-date Javadocs on Security.java
-  _docs/python_master                 d6751460   Fix out-of-date Javadocs on Security.java
+  _docs/plugins_5.0                   621f1417   [TEST] fixes SharedClusterSnapshotRestoreIT test so it assumes we are working with a repository that supports atomic move operations
+  _docs/plugins_5.1                   d5d2a916   [TEST] fixes SharedClusterSnapshotRestoreIT test so it assumes we are working with a repository that supports atomic move operations
+  _docs/plugins_5.x                   148cd688   fix date-processor to a new default year for every new pipeline execution. (#22601)
+  _docs/plugins_master                281250de   Remove DFS_QUERY_AND_FETCH as a search type (#22787)
+  _docs/python_master                 281250de   Remove DFS_QUERY_AND_FETCH as a search type (#22787)
   _docs/reference_0.90                d2bcbdfc   Make REST spec param types consistent
   _docs/reference_1.3                 1f380675   Fixed doc version links
   _docs/reference_1.4                 49ed5352   Fixed doc version links
@@ -112,15 +112,15 @@ Repo: elasticsearch
   _docs/reference_1.7                 54669d69   Bump versions and add BWC indices
   _docs/reference_2.0                 cbe06d19   Fixed doc version links
   _docs/reference_2.1                 9a7d5e7a   Fixed doc version links
-  _docs/reference_2.2                 4d5b739d   Specify fielddata formats in string docs (#21588)
+  _docs/reference_2.2                 cecf410d   Updating Typo (#22798)
   _docs/reference_2.3                 e4320643   Specify fielddata formats in string docs (#21588)
   _docs/reference_2.4                 f850e299   Release: Bumping to 2.4.5-SNAPSHOT
-  _docs/reference_5.0                 da3af77f   [TEST] No longer randomly block on the index-N files in the MockRepository, because the getRepositoryData() call depends on it, which is used in non-synchronized actions such as getting snapshot status.
-  _docs/reference_5.1                 4c8a43c4   Fix out-of-date Javadocs on Security.java
-  _docs/reference_5.x                 fa54063b   Fix out-of-date Javadocs on Security.java
-  _docs/reference_master              d6751460   Fix out-of-date Javadocs on Security.java
-  _docs/resiliency_master             d6751460   Fix out-of-date Javadocs on Security.java
-  _docs/ruby_master                   d6751460   Fix out-of-date Javadocs on Security.java
+  _docs/reference_5.0                 621f1417   [TEST] fixes SharedClusterSnapshotRestoreIT test so it assumes we are working with a repository that supports atomic move operations
+  _docs/reference_5.1                 d5d2a916   [TEST] fixes SharedClusterSnapshotRestoreIT test so it assumes we are working with a repository that supports atomic move operations
+  _docs/reference_5.x                 148cd688   fix date-processor to a new default year for every new pipeline execution. (#22601)
+  _docs/reference_master              281250de   Remove DFS_QUERY_AND_FETCH as a search type (#22787)
+  _docs/resiliency_master             281250de   Remove DFS_QUERY_AND_FETCH as a search type (#22787)
+  _docs/ruby_master                   281250de   Remove DFS_QUERY_AND_FETCH as a search type (#22787)
 
 Repo: elasticsearch-hadoop
 --------------------------------------------------------------------------------
@@ -131,33 +131,37 @@ Repo: elasticsearch-hadoop
   _docs/src/reference/asciidoc_2.4    bb73bdf9   2.4.4 Release
   _docs/src/reference/asciidoc_5.0    52460108   Update preface doc (#902)
   _docs/src/reference/asciidoc_5.1    5f468295   5.1.2 Release Notes
-  _docs/src/reference/asciidoc_5.x    5f468295   5.1.2 Release Notes
+  _docs/src/reference/asciidoc_5.x    f70b6fc9   Patch notes for 5.2.0
   _docs/src/reference/asciidoc_master b7ea331e   Fixing concurrent modification exceptions in the pooling logic.
 
 Repo: elasticsearch-js
 --------------------------------------------------------------------------------
-  _docs_12.1                          7a595e44   Temp fix to repoint master/search-percolate -> current/search-percolate in the docs
+  _docs_12.1                          0a86ad1c   [api] regenerate
 
 Repo: elasticsearch-net
 --------------------------------------------------------------------------------
   _docs_1.x                           d3d9f0ff   Bump assembly versions for release
-  _docs_2.x                           18aa4dc1   Limit NEST 2.x version compatibility to Elasticsearch.Net 2.x versions
-  _docs_5.x                           76b7cd9d   Bump assembly version for release
-  _docs_master                        63a81a4a   Update documentation
+  _docs_2.x                           1cbb60d4   Feature/suggester smoothing models (#2553)
+  _docs_5.x                           26b4880e   add meta ass reserved aggregation key name (#2554)
+  _docs_master                        f3281b80   add meta ass reserved aggregation key name (#2554)
 
 Repo: elasticsearch-php
 --------------------------------------------------------------------------------
   _docs_0.4                           ecd9be4f   Docs: Fixed broken link.
   _docs_1.0                           eaf6e4ab   Update travis
   _docs_2.0                           b91ab4ad   [Docs] Include namespace import
-  _docs_5.0                           d16e5417   Add 'human' param to global whitelist
-  _docs_master                        37b7ec1c   Add 'human' param to global whitelist
+  _docs_5.0                           4aba49bb   [DOCS] Update search-operations.asciidoc (#520)
+  _docs_master                        1ce7a08d   added terminate_after to search (#523)
 
 Repo: guide
 --------------------------------------------------------------------------------
   _._1.x                              00c280a0   Fixed some bad doc links
   _._2.x                              64e0fd72   fix Elastisearch typo (#613)
   _._master                           03c3ba42   make text consistent with example (#575)
+
+Repo: guide-cn
+--------------------------------------------------------------------------------
+  _._cn                               bd8bcce4   chapter23_part7:/230_Stemming/60_Stemming_in_situ.asciidoc  (#458)
 
 Repo: kibana
 --------------------------------------------------------------------------------
@@ -169,10 +173,10 @@ Repo: kibana
   _docs_4.4                           fb691c7f   Docs: Updated Loading Sample Data to download all datasets from S3 (#8999)
   _docs_4.5                           b9cb1d33   Docs: Updated Loading Sample Data to download all datasets from S3 (#8999)
   _docs_4.6                           fef23c84   bump to 4.6.5
-  _docs_5.0                           3b79a03c   docs: X-Pack settings via ENV under Docker (#9593)
-  _docs_5.1                           b6957581   bump to 5.1.3
-  _docs_5.x                           b3fddc98   Make Table rows have 1px borders. Lighten Table header color for increased contrast with row color. (#9864) (#9866)
-  _docs_master                        84662fda   Make Table rows have 1px borders. Lighten Table header color for increased contrast with row color. (#9864)
+  _docs_5.0                           5c0efb93   Allow build configuration to run on Windows machines (#9951)
+  _docs_5.1                           ee13cc91   Allow build configuration to run on Windows machines (#9951)
+  _docs_5.x                           584e671e   Implement manifest changes (#9967)
+  _docs_master                        d41b31db   Override Bootstrap styles that are inherited by CheckBox component. (#10067)
 
 Repo: logstash
 --------------------------------------------------------------------------------
@@ -183,9 +187,9 @@ Repo: logstash
   _docs_2.3                           ebb83146   Docs: Changing doc URL attributes to point to corresponding versions.
   _docs_2.4                           09f2986c   Docs: Changing doc URL attributes to point to corresponding versions.
   _docs_5.0                           ba6f1056   Merge pull request #350 from ph/backport/5.0-typo-sqs
-  _docs_5.1                           5df54dce   Sync from elastic/logstash@4b63fbe1180671dff809fe390bd26d99c97b002e
-  _docs_5.x                           29d72457   Sync from elastic/logstash@6b37c0f82e141a8e0062e5bd580d7343fd89e99f
-  _docs_master                        54ec7967   Sync from elastic/logstash@9cbb074468cdbff99fa4eb2b59488d1642a9c8f8
+  _docs_5.1                           5a7ada45   Sync from elastic/logstash@aa23dec5a13aff9b8e538dc363fdfe7848a089fb
+  _docs_5.x                           cdd9e218   Sync from elastic/logstash@f2486324afe9e9a4009ba1e2683959e790978837
+  _docs_master                        c3760fd0   Sync from elastic/logstash@db13b08d26e33a37cdb58e9182131604e21e7c5c
 
 Repo: sense
 --------------------------------------------------------------------------------
@@ -200,29 +204,29 @@ Repo: stack
 
 Repo: x-plugins
 --------------------------------------------------------------------------------
-  _docs/public/graph_2.3              9e125201   minor typo (#2909)
-  _docs/public/graph_2.4              911dd33f   Version: Bump to 2.4.5-SNAPSHOT
-  _docs/public/marvel_2.0             70d363d0   [DOCS] Fix LDAP realm timeout settings (#4255)
-  _docs/public/marvel_2.1             46a2695a   [DOCS] Fix LDAP realm timeout settings (#4255)
-  _docs/public/marvel_2.2             a7ce823f   [DOCS] Fix LDAP realm timeout settings (#4255)
-  _docs/public/marvel_2.3             9e125201   minor typo (#2909)
-  _docs/public/marvel_2.4             911dd33f   Version: Bump to 2.4.5-SNAPSHOT
+  _docs/public/graph_2.3              83187d0b   Docs: Fixed two broken external links.
+  _docs/public/graph_2.4              01e7dc59   Deploy: Exclude tests.jar from deployment
+  _docs/public/marvel_2.0             1d316581   Docs: Fixed two broken external links.
+  _docs/public/marvel_2.1             f36488df   Docs: Fixed two broken external links.
+  _docs/public/marvel_2.2             a40bb3c5   Docs: Fixed two broken external links.
+  _docs/public/marvel_2.3             83187d0b   Docs: Fixed two broken external links.
+  _docs/public/marvel_2.4             01e7dc59   Deploy: Exclude tests.jar from deployment
   _docs/public/marvel_marvel-1.3      4830ef3f   Updated docs-too-old header
-  _docs/public/reporting_2.4          911dd33f   Version: Bump to 2.4.5-SNAPSHOT
-  _docs/public/shield_2.0             70d363d0   [DOCS] Fix LDAP realm timeout settings (#4255)
-  _docs/public/shield_2.1             46a2695a   [DOCS] Fix LDAP realm timeout settings (#4255)
-  _docs/public/shield_2.2             a7ce823f   [DOCS] Fix LDAP realm timeout settings (#4255)
-  _docs/public/shield_2.3             9e125201   minor typo (#2909)
-  _docs/public/shield_2.4             911dd33f   Version: Bump to 2.4.5-SNAPSHOT
+  _docs/public/reporting_2.4          01e7dc59   Deploy: Exclude tests.jar from deployment
+  _docs/public/shield_2.0             1d316581   Docs: Fixed two broken external links.
+  _docs/public/shield_2.1             f36488df   Docs: Fixed two broken external links.
+  _docs/public/shield_2.2             a40bb3c5   Docs: Fixed two broken external links.
+  _docs/public/shield_2.3             83187d0b   Docs: Fixed two broken external links.
+  _docs/public/shield_2.4             01e7dc59   Deploy: Exclude tests.jar from deployment
   _docs/public/shield_shield-1.0      b2b9edfe   Updated docs-too-old header
   _docs/public/shield_shield-1.1      c1bfd7a2   Updated docs-too-old header
   _docs/public/shield_shield-1.2      a38e2bd2   Updated docs-too-old header
   _docs/public/shield_shield-1.3      8c3df845   Updated docs-too-old header
-  _docs/public/watcher_2.0            70d363d0   [DOCS] Fix LDAP realm timeout settings (#4255)
-  _docs/public/watcher_2.1            46a2695a   [DOCS] Fix LDAP realm timeout settings (#4255)
-  _docs/public/watcher_2.2            a7ce823f   [DOCS] Fix LDAP realm timeout settings (#4255)
-  _docs/public/watcher_2.3            9e125201   minor typo (#2909)
-  _docs/public/watcher_2.4            911dd33f   Version: Bump to 2.4.5-SNAPSHOT
+  _docs/public/watcher_2.0            1d316581   Docs: Fixed two broken external links.
+  _docs/public/watcher_2.1            f36488df   Docs: Fixed two broken external links.
+  _docs/public/watcher_2.2            a40bb3c5   Docs: Fixed two broken external links.
+  _docs/public/watcher_2.3            83187d0b   Docs: Fixed two broken external links.
+  _docs/public/watcher_2.4            01e7dc59   Deploy: Exclude tests.jar from deployment
   _docs/public/watcher_watcher-1.0    c6aca878   Make REST spec params consistent
   _docs/public_5.0                    816806d7   [TEST] Missed @Test annotation
-  _docs/public_5.1                    c30f1fed   bump version to 5.1.3 (#4632)
+  _docs/public_5.1                    4967c52b   Tests: Remove class only used by tests

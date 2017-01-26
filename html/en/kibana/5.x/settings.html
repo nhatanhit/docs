@@ -72,13 +72,13 @@
 	   
 
     <!-- css -->
-    <link href="https://static-www.elastic.co/static/css/main.css?q=700" rel="stylesheet">
+    <link href="https://stag-static-www.elastic.co/static/css/main.css?q=650" rel="stylesheet">
     
     
 
-    <script src="https://static-www.elastic.co/static/js/jquery.min.js?q=700"></script>
-    <script src="https://static-www.elastic.co/static/js/bootstrap.min.js?q=700"></script>
-    <script src="https://static-www.elastic.co/static/js/jquery.cookie.js?q=700"></script>
+    <script src="https://stag-static-www.elastic.co/static/js/jquery.min.js?q=650"></script>
+    <script src="https://stag-static-www.elastic.co/static/js/bootstrap.min.js?q=650"></script>
+    <script src="https://stag-static-www.elastic.co/static/js/jquery.cookie.js?q=650"></script>
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -122,7 +122,7 @@
 
 
 	
-	<link type="text/css" rel="stylesheet" href="https://static-www.elastic.co/static/css/guide.css?q=700" />
+	<link type="text/css" rel="stylesheet" href="https://stag-static-www.elastic.co/static/css/guide.css?q=650" />
 
 
   
@@ -200,7 +200,7 @@
           <div class="navbar-brand" id="elastic">
             <h1>
               <a class="logo-m hidden-sm hidden-md hidden-lg" href="/">
-                <img src="https://static-www.elastic.co/assets/bltd5ac38b4549d53de/elastic-logo-mobile (1).svg?q=700" alt="elastic-logo-mobile">
+                <img src="https://stag-static-www.elastic.co/assets/bltd5ac38b4549d53de/elastic-logo-mobile (1).svg?q=650" alt="elastic-logo-mobile">
               </a>
             </h1>
           </div>
@@ -249,7 +249,7 @@
       <div class="navbar-brand hidden-xs" id="elastic">
         <h1>
           <a class="hidden-xs" id="elastic-logo" href="/">
-            <img src="https://static-www.elastic.co/assets/blt6050efb80ceabd47/elastic-logo (2).svg?q=700" alt="elastic-logo">
+            <img src="https://stag-static-www.elastic.co/assets/blt6050efb80ceabd47/elastic-logo (2).svg?q=650" alt="elastic-logo">
           </a>
         </h1>
       </div>
@@ -382,24 +382,24 @@
   </div>
 </div>
 </header>
-<link rel="stylesheet" type="text/css" href="https://static-www.elastic.co/static/css/horizon-swiper.min.css?q=700">
+<link rel="stylesheet" type="text/css" href="https://stag-static-www.elastic.co/static/css/horizon-swiper.min.css?q=650">
 <style> 
     
       .m-shortcuts li a.m-search {
-        background: url("https://static-www.elastic.co/assets/blt7b9c4fe6528dc4ef/m-search-icon.png?q=700") no-repeat scroll center center rgba(0, 0, 0, 0);
+        background: url("https://stag-static-www.elastic.co/assets/blt7b9c4fe6528dc4ef/m-search-icon.png?q=650") no-repeat scroll center center rgba(0, 0, 0, 0);
         background-size: contain;}
     
       .m-shortcuts li a.m-docs {
-        background: url("https://static-www.elastic.co/assets/blt44d8b7530a76d01c/m-guide-icon.png?q=700") no-repeat scroll center center rgba(0, 0, 0, 0);
+        background: url("https://stag-static-www.elastic.co/assets/blt44d8b7530a76d01c/m-guide-icon.png?q=650") no-repeat scroll center center rgba(0, 0, 0, 0);
         background-size: contain;}
     
       .m-shortcuts li a.m-contact {
-        background: url("https://static-www.elastic.co/assets/blt878040795c9d083b/m-contact-icon.png?q=700") no-repeat scroll center center rgba(0, 0, 0, 0);
+        background: url("https://stag-static-www.elastic.co/assets/blt878040795c9d083b/m-contact-icon.png?q=650") no-repeat scroll center center rgba(0, 0, 0, 0);
         background-size: contain;}
     
     
 </style>
-<script type="text/javascript" src="https://static-www.elastic.co/static/js/horizon-swiper.min.js?q=700"></script>
+<script type="text/javascript" src="https://stag-static-www.elastic.co/static/js/horizon-swiper.min.js?q=650"></script>
 <script type="text/javascript">
   $(document).ready( function(){
     // if($('#scrollable-pane li').length > 3){
@@ -547,7 +547,7 @@
           
 
           
-	<section id="guide">
+	<section id="guide" lang="en">
 		<div class="container">
 			<div class="row">
 			  <!-- start body -->
@@ -661,8 +661,8 @@ dashboards. Kibana creates a new index if the index doesn’t already exist.
 </p>
 </td><td valign="top">
 <p>
-<span class="strong"><strong>Default: <code class="literal">"https://tiles.elastic.co/v1/default/{z}/{x}/{y}.png?elastic_tile_service_tos=agree&amp;my_app_name=kibana"</code></strong></span> The URL to the tile
-service that Kibana uses to display map tiles in tilemap visualizations.
+The URL to the tile
+service that Kibana uses to display map tiles in tilemap visualizations. By default, Kibana reads this url from an external metadata service, but users can still override this parameter to use their own Tile Map Service. For example: <code class="literal">"https://tiles.elastic.co/v2/default/{z}/{x}/{y}.png?elastic_tile_service_tos=agree&amp;my_app_name=kibana"</code>
 </p>
 </td></tr><tr><td valign="top">
 <p>
@@ -709,12 +709,60 @@ startup. Your Kibana users still need to authenticate with Elasticsearch, which 
 </p>
 </td></tr><tr><td valign="top">
 <p>
-<code class="literal">server.ssl.cert:</code> and <code class="literal">server.ssl.key:</code>
+<code class="literal">server.ssl.enabled</code>
 </p>
 </td><td valign="top">
 <p>
-Paths to the PEM-format SSL certificate and SSL key files, respectively. These
-files enable SSL for outgoing requests from the Kibana server to the browser.
+<span class="strong"><strong>Default: "false"</strong></span> Enables SSL for outgoing requests from the Kibana server to the browser. When set to <code class="literal">true</code>, <code class="literal">server.ssl.certificate</code> and <code class="literal">server.ssl.key</code> are required
+</p>
+</td></tr><tr><td valign="top">
+<p>
+<code class="literal">server.ssl.certificate:</code> and <code class="literal">server.ssl.key:</code>
+</p>
+</td><td valign="top">
+<p>
+Paths to the PEM-format SSL certificate and SSL key files, respectively.
+</p>
+</td></tr><tr><td valign="top">
+<p>
+<code class="literal">server.ssl.keyPassphrase</code>
+</p>
+</td><td valign="top">
+<p>
+The passphrase that will be used to decrypt the private key. This value is optional as the key may not be encrypted.
+</p>
+</td></tr><tr><td valign="top">
+<p>
+<code class="literal">server.ssl.certificateAuthorities</code>
+</p>
+</td><td valign="top">
+<p>
+List of paths to PEM encoded certificate files that should be trusted.
+</p>
+</td></tr><tr><td valign="top">
+<p>
+<code class="literal">server.ssl.clientAuthentication</code>
+</p>
+</td><td valign="top">
+<p>
+<span class="strong"><strong>Default: none</strong></span> Controls Kibana’s server behavior in regard to requesting a certificate from client connections. Valid values are <code class="literal">required</code>,
+ and <code class="literal">none</code>. <code class="literal">required</code> forces a client to present a certificate, while <code class="literal">none</code> does not.
+</p>
+</td></tr><tr><td valign="top">
+<p>
+<code class="literal">server.ssl.supportedProtocols</code>
+</p>
+</td><td valign="top">
+<p>
+<span class="strong"><strong>Default: TLSv1, TLSv1.1, TLSv1.2</strong></span>  Supported protocols with versions. Valid protocols: <code class="literal">TLSv1</code>, <code class="literal">TLSv1.1</code>, <code class="literal">TLSv1.2</code>
+</p>
+</td></tr><tr><td valign="top">
+<p>
+<code class="literal">server.ssl.cipherSuites</code>
+</p>
+</td><td valign="top">
+<p>
+<span class="strong"><strong>Default: ECDHE-RSA-AES128-GCM-SHA256, ECDHE-ECDSA-AES128-GCM-SHA256, ECDHE-RSA-AES256-GCM-SHA384, ECDHE-ECDSA-AES256-GCM-SHA384, DHE-RSA-AES128-GCM-SHA256, ECDHE-RSA-AES128-SHA256, DHE-RSA-AES128-SHA256, ECDHE-RSA-AES256-SHA384, DHE-RSA-AES256-SHA384, ECDHE-RSA-AES256-SHA256, DHE-RSA-AES256-SHA256, HIGH,!aNULL, !eNULL, !EXPORT, !DES, !RC4, !MD5, !PSK, !SRP, !CAMELLIA</strong></span>. Details on the format, and the valid options, are available via the [OpenSSL cipher list format documentation](<a class="ulink" href="https://www.openssl.org/docs/man1.0.2/apps/ciphers.html#CIPHER-LIST-FORMAT" target="_top">https://www.openssl.org/docs/man1.0.2/apps/ciphers.html#CIPHER-LIST-FORMAT</a>)
 </p>
 </td></tr><tr><td valign="top">
 <p>
@@ -727,21 +775,29 @@ certificate and key files. These files validate that your Elasticsearch backend 
 </p>
 </td></tr><tr><td valign="top">
 <p>
-<code class="literal">elasticsearch.ssl.ca:</code>
+<code class="literal">elasticsearch.ssl.keyPassphrase</code>
 </p>
 </td><td valign="top">
 <p>
-Optional setting that enables you to specify a path to the PEM file for the certificate
+The passphrase that will be used to decrypt the private key. This value is optional as the key may not be encrypted.
+</p>
+</td></tr><tr><td valign="top">
+<p>
+<code class="literal">elasticsearch.ssl.certificateAuthorities:</code>
+</p>
+</td><td valign="top">
+<p>
+Optional setting that enables you to specify a list of paths to the PEM file for the certificate
 authority for your Elasticsearch instance.
 </p>
 </td></tr><tr><td valign="top">
 <p>
-<code class="literal">elasticsearch.ssl.verify:</code>
+<code class="literal">elasticsearch.ssl.verificationMode:</code>
 </p>
 </td><td valign="top">
 <p>
-<span class="strong"><strong>Default: true</strong></span> To disregard the validity of SSL certificates, change this setting’s value
-to <code class="literal">false</code>.
+<span class="strong"><strong>Default: full</strong></span> Controls the verification of certificates. Valid values are <code class="literal">none</code>, <code class="literal">certificate</code>, and <code class="literal">full</code>.
+<code class="literal">full</code> performs hostname verification, and <code class="literal">certificate</code> does not.
 </p>
 </td></tr><tr><td valign="top">
 <p>
@@ -865,23 +921,6 @@ unauthenticated users to access the Kibana server status API and status page.
 <p>
 <span class="strong"><strong>Default: true</strong></span> Set to false to disable Console.  Toggling this will cause the server to regenerate assets on the next startup, which may cause a delay before pages start being served.
 </p>
-</td></tr><tr><td valign="top">
-<p>
-<code class="literal">console.proxyFilter</code>
-</p>
-</td><td valign="top">
-<p>
-<span class="strong"><strong>Default: <code class="literal">.*</code></strong></span> A list of regular expressions that are used to validate any outgoing request from Console. If none of these match, the request will be rejected.
-</p>
-</td></tr><tr><td valign="top">
-<p>
-<code class="literal">console.proxyConfig</code>
-</p>
-</td><td valign="top">
-<p>
-A list of configuration options that are based on the proxy target. Use this to set custom timeouts or SSL settings for specific hosts. This is done by defining a set of <code class="literal">match</code> criteria using wildcards/globs which will be checked against each request. The configuration from all matching rules will then be merged together to configure the proxy used for that request.
-</p>
-<p>The valid match keys are <code class="literal">match.protocol</code>, <code class="literal">match.host</code>, <code class="literal">match.port</code>, and <code class="literal">match.path</code>. All of these keys default to <code class="literal">*</code>, which means they will match any value. See <a class="xref" href="configuring-console.html" title="Configuring Console"><em>Configuring Console</em></a> for an example.</p>
 </td></tr><tr><td valign="top">
 <p>
 <code class="literal">elasticsearch.tribe.url:</code>
@@ -1304,38 +1343,38 @@ cannot be overwritten by client-side headers, regardless of the <code class="lit
 <style type="text/css">
 	
     
-		.facebook{background:url("https://static-www.elastic.co/assets/bltf546ff2e0a8f2de5/facebook.svg?q=700") no-repeat;}
+		.facebook{background:url("https://stag-static-www.elastic.co/assets/bltf546ff2e0a8f2de5/facebook.svg?q=650") no-repeat;}
     
     
-      .facebook:hover {background:url("https://static-www.elastic.co/assets/bltc24cf11c714ecfc4/facebook-hover.svg?q=700")}		
-    
-	
-    
-		.twitter{background:url("https://static-www.elastic.co/assets/bltdd9556d6b24e2b85/twitter.svg?q=700") no-repeat;}
-    
-    
-      .twitter:hover {background:url("https://static-www.elastic.co/assets/blt90b0372cc07a54d3/twitter-hover.svg?q=700")}		
+      .facebook:hover {background:url("https://stag-static-www.elastic.co/assets/bltc24cf11c714ecfc4/facebook-hover.svg?q=650")}		
     
 	
     
-		.linkedin{background:url("https://static-www.elastic.co/assets/bltc4a77e0f52ce07f1/linkedin.svg?q=700") no-repeat;}
+		.twitter{background:url("https://stag-static-www.elastic.co/assets/bltdd9556d6b24e2b85/twitter.svg?q=650") no-repeat;}
     
     
-      .linkedin:hover {background:url("https://static-www.elastic.co/assets/blt01ce654380e4ea6c/linkedin-hover.svg?q=700")}		
-    
-	
-    
-		.xing{background:url("https://static-www.elastic.co/assets/bltc6347078dcc9ec76/xing.svg?q=700") no-repeat;}
-    
-    
-      .xing:hover {background:url("https://static-www.elastic.co/assets/bltededebe5f7521a39/xing-hover.svg?q=700")}		
+      .twitter:hover {background:url("https://stag-static-www.elastic.co/assets/blt90b0372cc07a54d3/twitter-hover.svg?q=650")}		
     
 	
     
-		.youtube{background:url("https://static-www.elastic.co/assets/blt4982061ce1aebc7f/youtube.svg?q=700") no-repeat;}
+		.linkedin{background:url("https://stag-static-www.elastic.co/assets/bltc4a77e0f52ce07f1/linkedin.svg?q=650") no-repeat;}
     
     
-      .youtube:hover {background:url("https://static-www.elastic.co/assets/bltddeb6c6404ae81a5/youtube-hover.svg?q=700")}		
+      .linkedin:hover {background:url("https://stag-static-www.elastic.co/assets/blt01ce654380e4ea6c/linkedin-hover.svg?q=650")}		
+    
+	
+    
+		.xing{background:url("https://stag-static-www.elastic.co/assets/bltc6347078dcc9ec76/xing.svg?q=650") no-repeat;}
+    
+    
+      .xing:hover {background:url("https://stag-static-www.elastic.co/assets/bltededebe5f7521a39/xing-hover.svg?q=650")}		
+    
+	
+    
+		.youtube{background:url("https://stag-static-www.elastic.co/assets/blt4982061ce1aebc7f/youtube.svg?q=650") no-repeat;}
+    
+    
+      .youtube:hover {background:url("https://stag-static-www.elastic.co/assets/bltddeb6c6404ae81a5/youtube-hover.svg?q=650")}		
     
 	
 </style>
@@ -1367,10 +1406,10 @@ cannot be overwritten by client-side headers, regardless of the <code class="lit
 	var suggestionsUrl = "https://search.elastic.co/suggest";	
 	var localeUrl = '{"relative_url_prefix":"/","code":"en-us","url":"/guide_template"}';
 </script>
-<script src="https://static-www.elastic.co/static/js/jquery.autocomplete.js?q=700"></script>
-<script type="text/javascript" src="https://static-www.elastic.co/static/js/slick.min.js?q=700"></script>
-<script src="https://static-www.elastic.co/static/js/nav-v5.js?q=700"></script>
-<script src="https://static-www.elastic.co/static/js/script.js?q=700"></script> 
+<script src="https://stag-static-www.elastic.co/static/js/jquery.autocomplete.js?q=650"></script>
+<script type="text/javascript" src="https://stag-static-www.elastic.co/static/js/slick.min.js?q=650"></script>
+<script src="https://stag-static-www.elastic.co/static/js/nav-v5.js?q=650"></script>
+<script src="https://stag-static-www.elastic.co/static/js/script.js?q=650"></script> 
      
      <style></style>
      

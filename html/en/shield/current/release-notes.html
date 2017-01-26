@@ -72,13 +72,13 @@
 	   
 
     <!-- css -->
-    <link href="https://static-www.elastic.co/static/css/main.css?q=700" rel="stylesheet">
+    <link href="https://stag-static-www.elastic.co/static/css/main.css?q=650" rel="stylesheet">
     
     
 
-    <script src="https://static-www.elastic.co/static/js/jquery.min.js?q=700"></script>
-    <script src="https://static-www.elastic.co/static/js/bootstrap.min.js?q=700"></script>
-    <script src="https://static-www.elastic.co/static/js/jquery.cookie.js?q=700"></script>
+    <script src="https://stag-static-www.elastic.co/static/js/jquery.min.js?q=650"></script>
+    <script src="https://stag-static-www.elastic.co/static/js/bootstrap.min.js?q=650"></script>
+    <script src="https://stag-static-www.elastic.co/static/js/jquery.cookie.js?q=650"></script>
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -122,7 +122,7 @@
 
 
 	
-	<link type="text/css" rel="stylesheet" href="https://static-www.elastic.co/static/css/guide.css?q=700" />
+	<link type="text/css" rel="stylesheet" href="https://stag-static-www.elastic.co/static/css/guide.css?q=650" />
 
 
   
@@ -200,7 +200,7 @@
           <div class="navbar-brand" id="elastic">
             <h1>
               <a class="logo-m hidden-sm hidden-md hidden-lg" href="/">
-                <img src="https://static-www.elastic.co/assets/bltd5ac38b4549d53de/elastic-logo-mobile (1).svg?q=700" alt="elastic-logo-mobile">
+                <img src="https://stag-static-www.elastic.co/assets/bltd5ac38b4549d53de/elastic-logo-mobile (1).svg?q=650" alt="elastic-logo-mobile">
               </a>
             </h1>
           </div>
@@ -249,7 +249,7 @@
       <div class="navbar-brand hidden-xs" id="elastic">
         <h1>
           <a class="hidden-xs" id="elastic-logo" href="/">
-            <img src="https://static-www.elastic.co/assets/blt6050efb80ceabd47/elastic-logo (2).svg?q=700" alt="elastic-logo">
+            <img src="https://stag-static-www.elastic.co/assets/blt6050efb80ceabd47/elastic-logo (2).svg?q=650" alt="elastic-logo">
           </a>
         </h1>
       </div>
@@ -382,24 +382,24 @@
   </div>
 </div>
 </header>
-<link rel="stylesheet" type="text/css" href="https://static-www.elastic.co/static/css/horizon-swiper.min.css?q=700">
+<link rel="stylesheet" type="text/css" href="https://stag-static-www.elastic.co/static/css/horizon-swiper.min.css?q=650">
 <style> 
     
       .m-shortcuts li a.m-search {
-        background: url("https://static-www.elastic.co/assets/blt7b9c4fe6528dc4ef/m-search-icon.png?q=700") no-repeat scroll center center rgba(0, 0, 0, 0);
+        background: url("https://stag-static-www.elastic.co/assets/blt7b9c4fe6528dc4ef/m-search-icon.png?q=650") no-repeat scroll center center rgba(0, 0, 0, 0);
         background-size: contain;}
     
       .m-shortcuts li a.m-docs {
-        background: url("https://static-www.elastic.co/assets/blt44d8b7530a76d01c/m-guide-icon.png?q=700") no-repeat scroll center center rgba(0, 0, 0, 0);
+        background: url("https://stag-static-www.elastic.co/assets/blt44d8b7530a76d01c/m-guide-icon.png?q=650") no-repeat scroll center center rgba(0, 0, 0, 0);
         background-size: contain;}
     
       .m-shortcuts li a.m-contact {
-        background: url("https://static-www.elastic.co/assets/blt878040795c9d083b/m-contact-icon.png?q=700") no-repeat scroll center center rgba(0, 0, 0, 0);
+        background: url("https://stag-static-www.elastic.co/assets/blt878040795c9d083b/m-contact-icon.png?q=650") no-repeat scroll center center rgba(0, 0, 0, 0);
         background-size: contain;}
     
     
 </style>
-<script type="text/javascript" src="https://static-www.elastic.co/static/js/horizon-swiper.min.js?q=700"></script>
+<script type="text/javascript" src="https://stag-static-www.elastic.co/static/js/horizon-swiper.min.js?q=650"></script>
 <script type="text/javascript">
   $(document).ready( function(){
     // if($('#scrollable-pane li').length > 3){
@@ -547,7 +547,7 @@
           
 
           
-	<section id="guide">
+	<section id="guide" lang="en">
 		<div class="container">
 			<div class="row">
 			  <!-- start body -->
@@ -569,30 +569,36 @@ example, Shield 2.4.4 requires Elasticsearch 2.4.4.</p><h4><a id="update-roles">
 applications such as Marvel and Kibana. Any role changes are stored in <code class="literal">roles.yml.new</code> when you upgrade. We recommend copying the following changes to your <code class="literal">roles.yml</code> file.</p><div class="itemizedlist"><ul class="itemizedlist" type="disc"><li class="listitem">
 <span class="added">
       [<span class="version">2.4.0</span>]
-      <span class="detail">Added in 2.4.0.</span></span> The <code class="literal">kibana4_server</code> role has been updated to support privileges necessary for reporting.
+      <span class="detail">Added in 2.4.0. 
+</span></span> The <code class="literal">kibana4_server</code> role has been updated to support privileges necessary for reporting.
 </li><li class="listitem">
 <span class="added">
       [<span class="version">2.3.0</span>]
-      <span class="detail">Added in 2.3.0.</span></span> The default roles have been updated to use the new format and use new <a class="link" href="shield-privileges.html" title="Shield Privileges">privilege names</a>. The previous
+      <span class="detail">Added in 2.3.0. 
+</span></span> The default roles have been updated to use the new format and use new <a class="link" href="shield-privileges.html" title="Shield Privileges">privilege names</a>. The previous
 <a class="link" href="_file_based_roles.html#deprecated-roles" title="Deprecated Role Formats">format</a> is now deprecated. The <code class="literal">kibana4</code> role has been removed; users should create their own based on the example
 <a class="link" href="kibana.html#kibana4-user-role">kibana user role</a>.
 </li><li class="listitem">
 <span class="added">
       [<span class="version">2.1.1</span>]
-      <span class="detail">Added in 2.1.1.</span></span> The <code class="literal">kibana4</code> role now grants access to the Field Stats API.
+      <span class="detail">Added in 2.1.1. 
+</span></span> The <code class="literal">kibana4</code> role now grants access to the Field Stats API.
 </li><li class="listitem">
 <span class="added">
       [<span class="version">2.0.0</span>]
-      <span class="detail">Added in 2.0.0.</span></span> The permission on all the roles are updated to the verbose format to make it easier to enable field level and document level security. The <code class="literal">transport_client</code> role has been updated to work with Elasticsearch 2.0.0.
+      <span class="detail">Added in 2.0.0. 
+</span></span> The permission on all the roles are updated to the verbose format to make it easier to enable field level and document level security. The <code class="literal">transport_client</code> role has been updated to work with Elasticsearch 2.0.0.
  The <code class="literal">marvel_user</code> role has been updated to work with Marvel 2.0 and a <code class="literal">remote_marvel_agent</code> role has been added. The <code class="literal">kibana3</code> and <code class="literal">marvel_agent</code> roles have been removed.
 </li><li class="listitem">
 <span class="added">
       [<span class="version">1.1.0</span>]
-      <span class="detail">Added in 1.1.0.</span></span> <code class="literal">kibana4_server</code> role added that defines the minimum set of permissions necessary for the Kibana 4 server.
+      <span class="detail">Added in 1.1.0. 
+</span></span> <code class="literal">kibana4_server</code> role added that defines the minimum set of permissions necessary for the Kibana 4 server.
 </li><li class="listitem">
 <span class="added">
       [<span class="version">1.0.1</span>]
-      <span class="detail">Added in 1.0.1.</span></span> <code class="literal">kibana4</code> role updated to work with new features in Kibana 4 RC1
+      <span class="detail">Added in 1.0.1. 
+</span></span> <code class="literal">kibana4</code> role updated to work with new features in Kibana 4 RC1
 </li></ul></div><h3><a id="changelist"></a>Change List</h3><h4><a id="_2_4_4"></a>2.4.4</h4><p>January 12, 2017</p><div class="itemizedlist"><p class="title"><strong>Bug Fixes</strong></p><ul class="itemizedlist" type="disc"><li class="listitem">
 Execution now stops if a destructive operations check fails.
 </li></ul></div><h4><a id="_2_4_2"></a>2.4.2</h4><p>November 22, 2016</p><div class="itemizedlist"><p class="title"><strong>Bug Fixes</strong></p><ul class="itemizedlist" type="disc"><li class="listitem">
@@ -1135,38 +1141,38 @@ Ensure the mandatory <code class="literal">base_dn</code> settings is set in the
 <style type="text/css">
 	
     
-		.facebook{background:url("https://static-www.elastic.co/assets/bltf546ff2e0a8f2de5/facebook.svg?q=700") no-repeat;}
+		.facebook{background:url("https://stag-static-www.elastic.co/assets/bltf546ff2e0a8f2de5/facebook.svg?q=650") no-repeat;}
     
     
-      .facebook:hover {background:url("https://static-www.elastic.co/assets/bltc24cf11c714ecfc4/facebook-hover.svg?q=700")}		
-    
-	
-    
-		.twitter{background:url("https://static-www.elastic.co/assets/bltdd9556d6b24e2b85/twitter.svg?q=700") no-repeat;}
-    
-    
-      .twitter:hover {background:url("https://static-www.elastic.co/assets/blt90b0372cc07a54d3/twitter-hover.svg?q=700")}		
+      .facebook:hover {background:url("https://stag-static-www.elastic.co/assets/bltc24cf11c714ecfc4/facebook-hover.svg?q=650")}		
     
 	
     
-		.linkedin{background:url("https://static-www.elastic.co/assets/bltc4a77e0f52ce07f1/linkedin.svg?q=700") no-repeat;}
+		.twitter{background:url("https://stag-static-www.elastic.co/assets/bltdd9556d6b24e2b85/twitter.svg?q=650") no-repeat;}
     
     
-      .linkedin:hover {background:url("https://static-www.elastic.co/assets/blt01ce654380e4ea6c/linkedin-hover.svg?q=700")}		
-    
-	
-    
-		.xing{background:url("https://static-www.elastic.co/assets/bltc6347078dcc9ec76/xing.svg?q=700") no-repeat;}
-    
-    
-      .xing:hover {background:url("https://static-www.elastic.co/assets/bltededebe5f7521a39/xing-hover.svg?q=700")}		
+      .twitter:hover {background:url("https://stag-static-www.elastic.co/assets/blt90b0372cc07a54d3/twitter-hover.svg?q=650")}		
     
 	
     
-		.youtube{background:url("https://static-www.elastic.co/assets/blt4982061ce1aebc7f/youtube.svg?q=700") no-repeat;}
+		.linkedin{background:url("https://stag-static-www.elastic.co/assets/bltc4a77e0f52ce07f1/linkedin.svg?q=650") no-repeat;}
     
     
-      .youtube:hover {background:url("https://static-www.elastic.co/assets/bltddeb6c6404ae81a5/youtube-hover.svg?q=700")}		
+      .linkedin:hover {background:url("https://stag-static-www.elastic.co/assets/blt01ce654380e4ea6c/linkedin-hover.svg?q=650")}		
+    
+	
+    
+		.xing{background:url("https://stag-static-www.elastic.co/assets/bltc6347078dcc9ec76/xing.svg?q=650") no-repeat;}
+    
+    
+      .xing:hover {background:url("https://stag-static-www.elastic.co/assets/bltededebe5f7521a39/xing-hover.svg?q=650")}		
+    
+	
+    
+		.youtube{background:url("https://stag-static-www.elastic.co/assets/blt4982061ce1aebc7f/youtube.svg?q=650") no-repeat;}
+    
+    
+      .youtube:hover {background:url("https://stag-static-www.elastic.co/assets/bltddeb6c6404ae81a5/youtube-hover.svg?q=650")}		
     
 	
 </style>
@@ -1198,10 +1204,10 @@ Ensure the mandatory <code class="literal">base_dn</code> settings is set in the
 	var suggestionsUrl = "https://search.elastic.co/suggest";	
 	var localeUrl = '{"relative_url_prefix":"/","code":"en-us","url":"/guide_template"}';
 </script>
-<script src="https://static-www.elastic.co/static/js/jquery.autocomplete.js?q=700"></script>
-<script type="text/javascript" src="https://static-www.elastic.co/static/js/slick.min.js?q=700"></script>
-<script src="https://static-www.elastic.co/static/js/nav-v5.js?q=700"></script>
-<script src="https://static-www.elastic.co/static/js/script.js?q=700"></script> 
+<script src="https://stag-static-www.elastic.co/static/js/jquery.autocomplete.js?q=650"></script>
+<script type="text/javascript" src="https://stag-static-www.elastic.co/static/js/slick.min.js?q=650"></script>
+<script src="https://stag-static-www.elastic.co/static/js/nav-v5.js?q=650"></script>
+<script src="https://stag-static-www.elastic.co/static/js/script.js?q=650"></script> 
      
      <style></style>
      
