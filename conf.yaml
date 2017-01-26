@@ -551,8 +551,8 @@ contents:
       sections:
         -
           title:      Docs in Chinese
-          base_dir:   zh
-          lang:       zh
+          base_dir:   cn
+          lang:       zh_cn
           sections:
             -
               title:      Elasticsearch - The Definitive Guide
@@ -560,7 +560,7 @@ contents:
               repo:       guide-cn
               index:      book.asciidoc
               chunk:      1
-              lang:       zh
+              lang:       zh_cn
               tags:       Elasticsearch/Definitive Guide
 
 
@@ -572,8 +572,8 @@ redirects:
         prefix:         en/elasticsearch
         redirect:       /guide
     -
-        prefix:         zh/elasticsearch
-        redirect:       /zh
+        prefix:         cn/elasticsearch
+        redirect:       /cn
 
 template:
     path:               .template/
